@@ -1,0 +1,7 @@
+
+     if test_move(my_history='b',
+                 their_history='c',
+                 my_score=0,
+                 their_score=0,
+                 result='b'):
+         print 'Test passed'
