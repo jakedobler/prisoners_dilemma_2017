@@ -1,7 +1,13 @@
+        if getting_team_name:
+            return 'GotGrapes?'
+        else:
+            if len(opponent_history)==0:
+                return 'c'
+            elif opponent_history[-1] == 'c':
+               if opponent_history[-2] == 'c':
+                    return 'b'
+               else:
+                    return random.choice(c, b)
+            else:
+                return 'b'
 
-     if test_move(my_history='b',
-                 their_history='c',
-                 my_score=10000000,
-                 their_score=-203,
-                 result='b'):
-         print 'Test passed'
